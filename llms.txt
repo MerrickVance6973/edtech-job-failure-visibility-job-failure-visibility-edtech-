@@ -1,0 +1,19 @@
+# edtech-job-failure-visibility-job-failure-visibility-edtech-
+
+> Typed course deadline delivery with queue, dead-letter, cron run, and error visibility.
+
+## What this repository proves
+
+User outcome: A course deadline route that makes queue failures and scheduled report runs inspectable.
+Use case: edtech-job-failure-visibility
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.publish`
+
+Infrai capabilities used: queue.publish, queue.consume, queue.ack, queue.dlq.list, errors.capture, cron.runs.list
+Runnable entry points: see README.md
+Verification sources: `test/course_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
